@@ -1,0 +1,37 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+
+# Personal or unauthorized recruiting data
+private/
+personal-data/
+candidate-resumes/
+*.doc
+*.docx
+*.pdf
+
+# Dependencies and generated build output
+node_modules/
+.pnpm-store/
+.pnpm-home/
+.next/
+.vinext/
+dist/
+coverage/
+.wrangler/
+work/
+
+# Sites-specific local binding
+.openai/hosting.json
+
+# Logs and editor files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

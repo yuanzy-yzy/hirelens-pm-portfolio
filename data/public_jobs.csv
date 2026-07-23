@@ -1,0 +1,61 @@
+sample_id,observed_date,source,city,district,job_title,company,salary_text,experience,education,recruitment_stage,product_direction,capability_tags,source_url,evidence_level,note
+BJ001,2026-07-23,BOSS直聘,北京,朝阳区朝外,AI产品经理（计算机人工智能专业本硕）,实战云,16-25K,3-5年,本科,社招,AI教育,需求分析;AI落地;产品迭代,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ002,2026-07-23,BOSS直聘,北京,朝阳区望京,AI产品经理,契基智能,20-40K·16薪,5-10年,本科,社招,B端AI,业务需求;方案设计;迭代管理,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ003,2026-07-23,BOSS直聘,北京,海淀区学院路,AI产品经理,知乎,20-40K·15薪,经验不限,本科,经验不限,C端AI,用户洞察;功能设计;跨团队协作,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ004,2026-07-23,BOSS直聘,北京,,AI产品经理,一起住好房,20-35K·14薪,3-5年,本科,社招,B端AI,产品管理;AI应用;业务场景,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ005,2026-07-23,BOSS直聘,北京,,AI产品经理,北京有亲恒致健康科技,20-30K,5-10年,本科,社招,金融AI,市场洞察;产品规划;智能体,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ006,2026-07-23,BOSS直聘,北京,海淀区学院路,AI产品经理,Looki,30-60K·16薪,5-10年,本科,社招,AI硬件,用户场景;AI交互;产品创新,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ007,2026-07-23,BOSS直聘,北京,海淀区上地,AI产品经理,好故事文化传媒,15-20K,3-5年,大专,社招,AI Agent,Coze;Dify;智能体调优,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ008,2026-07-23,BOSS直聘,北京,海淀区清河,AI产品经理,北京加速进化科技,25-50K·15薪,3-5年,本科,社招,机器人AI,AI Coding;Agent;模型中台,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ009,2026-07-23,BOSS直聘,北京,朝阳区朝外,AI产品经理,智盟云,15-30K,3-5年,本科,社招,AI视频,模块负责;质量标准;功能设计,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ010,2026-07-23,BOSS直聘,北京,朝阳区国贸,AI产品经理,德勤,15-25K,3-5年,本科,社招,B端AI,客户调研;业务流程;解决方案,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ011,2026-07-23,BOSS直聘,北京,大兴区亦庄,AI产品经理,京东科技信息技术,50-60K·20薪,3-5年,本科,社招,AI策略,模型评估;AB实验;badcase,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ012,2026-07-23,BOSS直聘,北京,海淀区上地,AI产品经理,研大教育,15-30K,3-5年,本科,社招,AI教育,RAG;Embedding;rerank,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ013,2026-07-23,BOSS直聘,北京,朝阳区望京,AI产品经理,猿辅导,25-50K·14薪,3-5年,本科,社招,AI教育,用户需求;商业化;技术边界,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ014,2026-07-23,BOSS直聘,北京,海淀区上地,AI产品经理,北京今日宜休科技,30-50K·15薪,5-10年,本科,社招,C端AI,0到1;用户痛点;AI Native,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ015,2026-07-23,BOSS直聘,北京,大兴区亦庄,AI产品经理,京东科技集团,30-50K·20薪,1-3年,本科,社招,B端AI,营销场景;数据场景;协同研发,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ016,2026-07-23,BOSS直聘,北京,朝阳区太阳宫,AI产品经理,BOSS直聘,50-60K·15薪,5-10年,本科,社招,招聘AI,产品roadmap;用户研究;数据观察,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ017,2026-07-23,BOSS直聘,北京,海淀区学院路,AI产品经理,知为医,20-30K·15薪,3-5年,硕士,社招,医疗AI,市场调研;需求分析;系统架构,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ018,2026-07-23,BOSS直聘,北京,朝阳区望京,AI产品经理,量化派,15-25K,在校/应届,本科,校招/应届,电商AI,需求洞察;方案设计;上线运营,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ019,2026-07-23,BOSS直聘,北京,海淀区西二旗,AI产品经理,作业帮,40-60K·15薪,3-5年,本科,社招,AI Agent,多Agent;能力边界;降级策略,https://www.zhipin.com/zhaopin/71e1a8fd8aabacd90nR82969FA~~/,公开搜索结果摘要,聚合页可见字段
+BJ020,2026-07-23,BOSS直聘,北京,朝阳区望京,AI Agent产品经理/专家,星汲银河智能科技,35-40K,1-3年,本科,社招,AI Agent,技术趋势;业务场景;Agent方案,https://www.zhipin.com/zhaopin/c66f268957c6bf320nB729q4Eg~~/,公开搜索结果摘要,聚合页可见字段
+CD001,2026-07-23,BOSS直聘,成都,武侯区新会展中心,AI产品经理,伍柒必乐,20-40K,5-10年,本科,社招,B端AI,模型工作流;产品设计;部署,https://www.zhipin.com/zhaopin/c4e1906231d9e72e03B_2ti0Fw~~/,公开搜索结果摘要,聚合页可见字段
+CD002,2026-07-23,BOSS直聘,成都,双流区华阳,AI产品经理,海创云出海,20-25K,3-5年,本科,社招,金融AI,业务场景;资料审核;智能客服,https://www.zhipin.com/zhaopin/c4e1906231d9e72e03B_2ti0Fw~~/,公开搜索结果摘要,聚合页可见字段
+CD003,2026-07-23,BOSS直聘,成都,武侯区桂溪,AI产品经理,智迅车联,11-16K,3-5年,本科,社招,B端AI,人机协同;Workflow;产品路线图,https://www.zhipin.com/zhaopin/c4e1906231d9e72e03B_2ti0Fw~~/,公开搜索结果摘要,聚合页可见字段
+CD004,2026-07-23,BOSS直聘,成都,,AI产品经理,大淘客,10-15K·14薪,3-5年,本科,社招,C端AI,AI搜索;转化路径;留存,https://www.zhipin.com/zhaopin/c4e1906231d9e72e03B_2ti0Fw~~/,公开搜索结果摘要,聚合页可见字段
+CD005,2026-07-23,BOSS直聘,成都,武侯区紫荆,AI产品经理,闪亮星空,8-13K,3-5年,大专,社招,C端AI,推荐系统;智能对话;效果验证,https://www.zhipin.com/zhaopin/c4e1906231d9e72e03B_2ti0Fw~~/,公开搜索结果摘要,聚合页可见字段
+CD006,2026-07-23,BOSS直聘,成都,武侯区双楠,AI产品经理,未披露,15-16K·13薪,5-10年,本科,社招,B端AI,对话机器人;考核指标;项目推动,https://www.zhipin.com/zhaopin/c4e1906231d9e72e03B_2ti0Fw~~/,公开搜索结果摘要,搜索摘要未展示公司名
+CQ001,2026-07-23,BOSS直聘,重庆,,AI产品经理（工业互联网）,重庆诚智鹏科技,未展示,未展示,未展示,未知,工业AI,工业互联网;平台产品,https://m.zhipin.com/zhaopin/a8ac9b546fe9629b3n1_0ty4/,公开搜索结果摘要,字段不完整仅用于城市供给观察
+HZ001,2026-07-23,BOSS直聘,杭州,余杭区仓前,AI产品经理,博亦远科技,未展示,10年以上,本科,社招,B端AI,SaaS;流程AI化;智能客服,https://m.zhipin.com/zhaopin/a3dad1889ceb62c103Fy09u_GQ~~/,公开搜索结果摘要,聚合页可见字段
+HZ002,2026-07-23,BOSS直聘,杭州,,AI产品经理,同花顺,20-40K·14薪,经验不限,本科,经验不限,金融AI,Agent评测;评测流程;模型优化,https://m.zhipin.com/zhaopin/a3dad1889ceb62c103Fy09u_GQ~~/,公开搜索结果摘要,聚合页可见字段
+HZ003,2026-07-23,BOSS直聘,杭州,西湖区文二路,AI产品经理,厚德科技,6-10K,1-3年,本科,社招,AI应用,产品规划;用户需求;市场调研,https://m.zhipin.com/zhaopin/a3dad1889ceb62c103Fy09u_GQ~~/,公开搜索结果摘要,聚合页可见字段
+HZ004,2026-07-23,BOSS直聘,杭州,余杭区仓前,AI产品经理,杭州晨对科技有限公司,16-30K,3-5年,本科,社招,AI应用,产品设计;需求分析;项目落地,https://m.zhipin.com/zhaopin/a3dad1889ceb62c103Fy09u_GQ~~/,公开搜索结果摘要,聚合页可见字段
+HZ005,2026-07-23,BOSS直聘,杭州,余杭区仓前,AI营销产品经理实习（智能体方向）,杭州星核引力人工智能,120-180元/天,在校,本科,实习,AI Agent,AI营销;智能体;竞品分析,https://www.zhipin.com/zhaopin/c85a8f456363524503d929-1FQ~~/,公开搜索结果摘要,聚合页可见字段
+HZ006,2026-07-23,BOSS直聘,杭州,上城区南星,AI产品经理-智能体方向,炽橙数字,20-40K·13薪,1-3年,本科,社招,AI Agent,市场调研;产品全生命周期;解决方案,https://www.zhipin.com/zhaopin/c85a8f456363524503d929-1FQ~~/,公开搜索结果摘要,聚合页可见字段
+HZ007,2026-07-23,BOSS直聘,杭州,余杭区仓前,27届实习AI产品经理-超级智能体,阿里巴巴集团,300-500元/天,在校,本科,实习/校招,AI Agent,产品规划;模型迭代;用户需求,https://www.zhipin.com/zhaopin/c85a8f456363524503d929-1FQ~~/,公开搜索结果摘要,聚合页可见字段
+HZ008,2026-07-23,BOSS直聘,杭州,余杭区五常,AI产品经理/负责人（智能投研/金融）,同花顺,30-60K·15薪,3-5年,硕士,社招,金融AI,产品战略;智能投研;金融写作,https://www.zhipin.com/zhaopin/c85a8f456363524503d929-1FQ~~/,公开搜索结果摘要,聚合页可见字段
+HZ009,2026-07-23,BOSS直聘,杭州,拱墅区文一路,AI产品经理（智能制造工业智能机器人）,同花顺,27-40K·15薪,3-5年,本科,社招,工业AI,行业调研;机器人;技术趋势,https://www.zhipin.com/zhaopin/c85a8f456363524503d929-1FQ~~/,公开搜索结果摘要,聚合页可见字段
+HZ010,2026-07-23,BOSS直聘,杭州,西湖区西溪,阿里云智能-AI Agent产品经理,阿里云,25-40K·16薪,3-5年,本科,社招,AI Agent,AI Coding;体验设计;Agent评测,https://www.zhipin.com/zhaopin/ac6f34f6a27ba2c11nZ_29i7FA~~/,公开搜索结果摘要,聚合页可见字段
+HZ011,2026-07-23,BOSS直聘,杭州,余杭区仓前,淘天-产品经理-交易平台产品（AI）,阿里云,20-40K·16薪,1-3年,本科,社招,B端AI,交易平台;LLM;知识图谱,https://www.zhipin.com/zhaopin/ac6f34f6a27ba2c11nZ_29i7FA~~/,公开搜索结果摘要,聚合页可见字段
+HZ012,2026-07-23,BOSS直聘,杭州,西湖区西溪,蚂蚁集团-AI Native产品经理/产品专家-A付,蚂蚁集团,40-70K·15薪,经验不限,本科,经验不限,金融AI,AI Native;支付;决策系统,https://www.zhipin.com/zhaopin/682ff3522a97666f03x_2tu_FQ~~/,公开搜索结果摘要,聚合页可见字段
+SZ001,2026-07-23,BOSS直聘,深圳,宝安区西乡,AI产品经理,广州脉德柯斯技术,20-35K,3-5年,本科,社招,AI应用,需求分析;产品规划;项目推进,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ002,2026-07-23,BOSS直聘,深圳,罗湖区笋岗,AI产品经理,富地红华动力,25-35K,3-5年,本科,社招,AI硬件,技术趋势;用户痛点;产品战略,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ003,2026-07-23,BOSS直聘,深圳,南山区科技园,AI产品经理,基本操作,20-30K,3-5年,本科,社招,AI应用,市场调研;竞品分析;PRD,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ004,2026-07-23,BOSS直聘,深圳,南山区科技园,AI产品经理,爱奇迹科技,30-45K·16薪,3-5年,本科,社招,B端AI,业务流程;AI提效;需求抽象,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ005,2026-07-23,BOSS直聘,深圳,南山区科技园,AI产品经理,水滴公司,20-40K·16薪,3-5年,本科,社招,AI硬件,软件规划;用户研究;竞品分析,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ006,2026-07-23,BOSS直聘,深圳,南山区科技园,AI产品经理,Seel,25-50K·14薪,5-10年,本科,社招,AI Agent,0到1;全栈开发;本地部署,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ007,2026-07-23,BOSS直聘,深圳,龙岗区布吉,AI产品经理,深圳守正不出奇教育,12-24K,经验不限,本科,经验不限,AI教育,知识理解;产品设计;AI应用,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ008,2026-07-23,BOSS直聘,深圳,龙岗区坂田,AI产品经理,开思时代,20-35K,3-5年,本科,社招,B端AI,业务场景;AI解决方案;跨团队协作,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ009,2026-07-23,BOSS直聘,深圳,宝安区西乡,AI产品经理,明途知产,30-60K,3-5年,大专,社招,B端AI,知识产权;AI风控;业务目标,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ010,2026-07-23,BOSS直聘,深圳,南山区科技园,AI产品经理,深圳图翎智能有限公司,10-15K,经验不限,本科,经验不限,AI应用,市场研究;产品分析;跨团队协作,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ011,2026-07-23,BOSS直聘,深圳,南山区科技园,AI产品经理,云浪峰,15-20K·13薪,3-5年,本科,社招,B端AI,企业需求;版本规划;效果复盘,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ012,2026-07-23,BOSS直聘,深圳,南山区前海,AI产品经理,深关通,15-20K,3-5年,本科,社招,B端AI,SaaS;报关;自动化流程,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ013,2026-07-23,BOSS直聘,深圳,南山区科技园,AI产品经理,河南度算,40-60K,3-5年,硕士,社招,B端AI,业务痛点;销售提效;AI方案,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ014,2026-07-23,BOSS直聘,深圳,南山区科技园,AI产品经理,硅基万物,20-35K·13薪,3-5年,本科,社招,B端AI,客户调研;大模型应用;需求管理,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ015,2026-07-23,BOSS直聘,深圳,光明区光明,AI产品经理,深圳觉知生命人工智能,13-22K,3-5年,本科,社招,C端AI,对话AI;Prompt;模型选型,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ016,2026-07-23,BOSS直聘,深圳,龙岗区坂田,AI产品经理,信诚创新,20-30K,3-5年,本科,社招,AI应用,市场调研;需求分析;产品优化,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ017,2026-07-23,BOSS直聘,深圳,龙岗区坂田,AI产品经理,领鹿鸿图,20-35K,3-5年,本科,社招,C端AI,用户需求;PRD;交互设计,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ018,2026-07-23,BOSS直聘,深圳,龙岗区坂田,AI产品经理,元一天问,15-28K,5-10年,本科,社招,B端/C端AI,全生命周期;原型;研发协同,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ019,2026-07-23,BOSS直聘,深圳,南山区科技园,AI产品经理,智城时代,15-25K,3-5年,本科,社招,AI应用,商业模式;版本迭代;PRD,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ020,2026-07-23,BOSS直聘,深圳,南山区科技园,AI产品经理,腾讯,20-40K·15薪,1-3年,本科,社招,AI Native,产品机制;方向判断;AI落地,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段
+SZ021,2026-07-23,BOSS直聘,深圳,南山区科技园,AI产品经理,深圳哇哇鱼网络,15-30K,3-5年,本科,社招,C端AI,市场调研;竞品分析;AI聊天,https://www.zhipin.com/zhaopin/0866aaf8349d5365031_3N-5Fw~~/,公开搜索结果摘要,聚合页可见字段

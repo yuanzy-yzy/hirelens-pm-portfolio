@@ -1,0 +1,7 @@
+sample_id,observed_date,company,city,job_title,recruitment_stage,core_responsibilities,core_requirements,source_url,evidence_level
+OFF001,2026-07-23,百度,北京,AI产品经理(J100665),2027届校招,AI大模型产品规划设计迭代;用户需求;人机协作;跨团队0到1;数据驱动增长,AI产品思维;大模型AIGC智能助手理解;逻辑与沟通;AI项目或实习优先,https://talent.baidu.com/jobs/detail/GRADUATE/423c0fa3-a0f3-4def-a882-7466d3685b79,企业官方完整JD
+OFF002,2026-07-23,百度,北京,大模型产品经理(J72652),社招,定义知识问答内容创作多轮对话能力;用户需求与理想态回复;模型效果提升;数据与运营策略,大模型底层理解;模型能力划分与优化;沟通推动;数据质量和评估判断,https://talent.baidu.com/jobs/detail/SOCIAL/ff9ed74c-8ec5-41f6-8a4c-1950500bd9f2,企业官方完整JD
+OFF003,2026-07-23,百度,北京,AI产品经理(J84492),社招,语音交互大模型策略;质量评估;评估洞察;算法协作;竞品分析;自动评估工具,大模型深度学习认知;结构化思维;表达协作;语音或科研经历优先,https://talent.baidu.com/jobs/detail/SOCIAL/6de8b72f-3c95-4078-be9e-df2602a9aab5,企业官方完整JD
+OFF004,2026-07-23,百度,北京,AI产品经理（企业效能方向）(J101407),社招,企业工作流分析;招聘等场景Agent落地;沙盒实验;指标看板;全流程管理;反馈迭代,Prompt;Agentic Workflow;完整提效产品;流程AI重构;独立Demo;跨部门协作,https://talent.baidu.com/jobs/detail/SOCIAL/645aeeb5-f2a7-4df3-b13c-d90a6006aac3,企业官方完整JD
+OFF005,2026-07-23,百度,北京,AI全栈产品经理(J100130),社招,用户研究;AI机会与PMF;模型能力产品化;Vibe Coding;端到端落地;指标与归因,独立AI产品;主流模型场景判断;可运行原型;Prompt实验;MCP Agent Skills RAG Function Calling,https://talent.baidu.com/jobs/detail/SOCIAL/e8e1904a-f6a7-4053-b630-c91f7e1d5269,企业官方完整JD
+OFF006,2026-07-23,百度,北京,AI产品经理实习生(J102315),实习,医疗健康用户需求;判断大模型切入点;产品规划设计;跨团队落地;数据监测与迭代,用户痛点分析;AI场景判断;项目协同;数据和满意度分析,https://talent.baidu.com/jobs/list?recruitType=INTERN,企业官方岗位列表
