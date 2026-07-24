@@ -1,98 +1,44 @@
-# vinext-starter
+# HireLens Web 原型
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+这是 HireLens AI 技术人才招聘助手的可运行 Web 原型。
 
-## Prerequisites
+## 当前能力
 
-- Node.js `>=22.13.0`
+- 将粘贴的岗位 JD 转换为规则库已支持的结构化要求；
+- 对粘贴的脱敏简历文本运行本地规则匹配；
+- 输出逐项匹配状态、原文证据、判断理由、置信度和面试问题；
+- 对候选人进行辅助排序，但不输出录用或淘汰决定；
+- 主动排除性别、婚育等与岗位能力无关的敏感属性；
+- 展示 20 条人工构造测试用例的规则基线评测结果。
 
-## Quick Start
+## 运行
+
+环境要求：Node.js 22.13.0 或更高版本。
 
 ```bash
-npm install
-npm run dev
-npm run build
+pnpm install
+pnpm dev
 ```
 
-This starter does not use `wrangler.jsonc`.
+打开终端显示的本地地址，进入“规则实验室”，粘贴测试 JD 和脱敏简历后点击“运行规则分析”。
 
-## Included Shape
+## 验证
 
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-OpenAI workspace sites can read the current user's email from
-`oai-authenticated-user-email`.
-
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
+```bash
+pnpm build
+node ../../../evaluation/run_rule_evaluation.mjs
 ```
 
-## Optional Dispatch-Owned ChatGPT Sign-In
+评测会生成：
 
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
+- `evaluation/rule_evaluation_results_v0.1.json`
+- `evaluation/13_规则基线评测报告_v0.1.md`
 
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
+## 数据边界
 
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
+- 实验室中的文本只在浏览器本地计算，不会上传或保存。
+- 不要输入真实候选人的姓名、电话、邮箱或其他未授权信息。
+- 当前规则库只覆盖已定义的技术招聘要求，不能代表通用招聘判断能力。
+- 20 条测试用例与规则在同一开发周期内设计，结果存在过拟合风险。
+- 大模型混合模式尚未接入。
 
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
-
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
-
-## Useful Commands
-
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
-
-## Learn More
-
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)

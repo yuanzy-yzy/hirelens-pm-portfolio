@@ -1,6 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { analyzeCandidate, buildJobProfileFromText, STATUS_LABELS } from "./lib/rule-engine.mjs";
+import { embeddedCandidates, embeddedJob } from "./lib/sample-data.mjs";
+import evaluationSummary from "./lib/evaluation-summary.json";
 
 type Candidate = {
   id: string;
@@ -10,68 +13,28 @@ type Candidate = {
   required: string;
   risk: string;
   status: "推荐复筛" | "需要核验" | "暂不优先";
+  resumeText: string;
+  matches: Array<{
+    requirementId: string;
+    requirement: string;
+    type: "required" | "core" | "bonus";
+    weight: number;
+    status: "met" | "partial" | "not_found" | "conflict" | "verify";
+    evidence: string;
+    confidence: number;
+    reason: string;
+    question: string;
+  }>;
 };
 
-const candidates: Candidate[] = [
-  { id: "E01", name: "测试候选人 E01", role: "嵌入式软件", score: 82, required: "4/5", risk: "Linux 深度", status: "推荐复筛" },
-  { id: "E03", name: "测试候选人 E03", role: "驱动开发", score: 78, required: "4/5", risk: "交付规模", status: "推荐复筛" },
-  { id: "E05", name: "测试候选人 E05", role: "硬件测试", score: 64, required: "3/5", risk: "调试职责", status: "需要核验" },
-  { id: "E04", name: "测试候选人 E04", role: "单片机开发", score: 57, required: "2/5", risk: "工作年限", status: "需要核验" },
-  { id: "E02", name: "测试候选人 E02", role: "Python 应用", score: 39, required: "1/5", risk: "技术栈差异", status: "暂不优先" },
-];
+const candidates = embeddedCandidates
+  .map((candidate) => analyzeCandidate(embeddedJob, candidate) as Candidate)
+  .sort((a, b) => b.score - a.score);
 
-const evidenceByCandidate: Record<string, Array<{
-  requirement: string;
-  type: string;
-  state: "满足" | "部分满足" | "未发现" | "待核验";
-  evidence: string;
-  reason: string;
-  question: string;
-}>> = {
-  E01: [
-    {
-      requirement: "具备 C/C++ 嵌入式项目经验",
-      type: "必备项 · 15%",
-      state: "满足",
-      evidence: "“使用 C 语言完成传感器采集模块，并负责接口联调。”",
-      reason: "存在直接的 C 语言嵌入式项目证据。",
-      question: "请介绍采集模块中最复杂的一次故障定位过程。",
-    },
-    {
-      requirement: "熟悉 Linux 开发与调试",
-      type: "必备项 · 15%",
-      state: "部分满足",
-      evidence: "“项目运行于 Linux 环境，使用交叉编译工具链。”",
-      reason: "证明使用过 Linux，但未明确涉及驱动、系统移植或性能调试。",
-      question: "你在 Linux 环境中具体负责了哪些开发和调试工作？",
-    },
-    {
-      requirement: "具备 SPI / I²C 等外设经验",
-      type: "核心能力 · 10%",
-      state: "待核验",
-      evidence: "“完成多个传感器接口联调。”",
-      reason: "描述未说明具体总线和个人职责。",
-      question: "请说明使用过的通信总线、调试工具以及遇到的时序问题。",
-    },
-  ],
-  E03: [
-    {
-      requirement: "具备 C/C++ 嵌入式项目经验",
-      type: "必备项 · 15%",
-      state: "满足",
-      evidence: "“独立完成 SPI 与 I²C 驱动开发及板级调试。”",
-      reason: "存在直接的驱动开发与调试证据。",
-      question: "驱动开发过程中如何处理异常和超时？",
-    },
-    {
-      requirement: "熟悉 Linux 开发与调试",
-      type: "必备项 · 15%",
-      state: "满足",
-      evidence: "“基于 Yocto 完成系统裁剪、交叉编译与镜像部署。”",
-      reason: "证据覆盖系统构建和部署链路。",
-      question: "系统裁剪时如何验证依赖完整性？",
-    },
-  ],
+const typeLabels = {
+  required: "必备项",
+  core: "核心能力",
+  bonus: "加分项",
 };
 
 const statusClass: Record<string, string> = {
@@ -79,26 +42,53 @@ const statusClass: Record<string, string> = {
   部分满足: "state partial",
   未发现: "state missing",
   待核验: "state verify",
+  矛盾: "state conflict",
 };
 
 export default function Home() {
   const [selectedId, setSelectedId] = useState("E01");
-  const [mode, setMode] = useState<"混合模式" | "规则模式">("混合模式");
-  const [activeView, setActiveView] = useState<"候选人" | "岗位画像" | "评估记录">("候选人");
+  const [mode, setMode] = useState<"规则模式" | "混合模式（待接入）">("规则模式");
+  const [activeView, setActiveView] = useState<"候选人" | "岗位画像" | "评估记录" | "规则实验室">("候选人");
+  const [labJd, setLabJd] = useState(embeddedJob.rawJd);
+  const [labResume, setLabResume] = useState(embeddedCandidates[0].resumeText);
+  const [labResult, setLabResult] = useState<Candidate | null>(null);
+  const [labRequirements, setLabRequirements] = useState<Array<{ text: string; weight: number }>>([]);
+  const [labWarnings, setLabWarnings] = useState<string[]>([]);
   const selected = useMemo(
     () => candidates.find((candidate) => candidate.id === selectedId) ?? candidates[0],
     [selectedId],
   );
-  const evidence = evidenceByCandidate[selectedId] ?? [
-    {
-      requirement: "核心岗位要求",
-      type: "必备项",
-      state: "未发现" as const,
-      evidence: "当前测试简历中未找到可引用证据。",
-      reason: "未发现不等于候选人不具备，需要人工复核。",
-      question: "请结合具体项目说明相关经验。",
-    },
-  ];
+  const evidence = selected.matches.map((item) => ({
+    ...item,
+    type: `${typeLabels[item.type]} · ${item.weight}%`,
+    state: STATUS_LABELS[item.status] as "满足" | "部分满足" | "未发现" | "待核验" | "矛盾",
+  }));
+  const recommendedCount = candidates.filter((candidate) => candidate.status === "推荐复筛").length;
+  const verifyCount = candidates.reduce(
+    (count, candidate) =>
+      count + candidate.matches.filter((item) => ["partial", "verify", "conflict"].includes(item.status)).length,
+    0,
+  );
+  const allMatches = candidates.flatMap((candidate) => candidate.matches);
+  const evidenceCoverage = Math.round(
+    (allMatches.filter((item) => item.status !== "not_found").length / allMatches.length) * 100,
+  );
+
+  function runRuleAnalysis() {
+    const parsedJob = buildJobProfileFromText(labJd);
+    setLabRequirements(parsedJob.requirements);
+    setLabWarnings(parsedJob.warnings);
+    if (!parsedJob.requirements.length) {
+      setLabResult(null);
+      return;
+    }
+    setLabResult(analyzeCandidate(parsedJob, {
+      id: "CUSTOM-01",
+      name: "自定义测试候选人",
+      role: "用户输入文本",
+      resumeText: labResume,
+    }) as Candidate);
+  }
 
   return (
     <main className="app-shell">
@@ -137,12 +127,12 @@ export default function Home() {
             <label className="mode-switch">
               <span>分析模式</span>
               <select value={mode} onChange={(event) => setMode(event.target.value as typeof mode)}>
-                <option>混合模式</option>
                 <option>规则模式</option>
+                <option disabled>混合模式（待接入）</option>
               </select>
             </label>
             <button className="secondary-button">导出报告</button>
-            <button className="primary-button">＋ 导入测试简历</button>
+            <button className="primary-button" onClick={() => setActiveView("规则实验室")}>＋ 输入测试简历</button>
           </div>
         </header>
 
@@ -161,18 +151,18 @@ export default function Home() {
             <span>候选人</span><strong>5</strong><small>人工构造测试数据</small>
           </article>
           <article className="metric-card">
-            <span>推荐复筛</span><strong>2</strong><small>仅供人工参考</small>
+            <span>推荐复筛</span><strong>{recommendedCount}</strong><small>规则引擎结果，仅供人工参考</small>
           </article>
           <article className="metric-card">
-            <span>待核验项</span><strong>7</strong><small>已转为面试问题</small>
+            <span>待核验项</span><strong>{verifyCount}</strong><small>已转为面试问题</small>
           </article>
           <article className="metric-card accent">
-            <span>证据覆盖率</span><strong>86%</strong><small>有原文定位的判断</small>
+            <span>证据覆盖率</span><strong>{evidenceCoverage}%</strong><small>规则运行后有原文定位的判断</small>
           </article>
         </section>
 
         <div className="view-tabs" role="tablist">
-          {(["候选人", "岗位画像", "评估记录"] as const).map((view) => (
+          {(["候选人", "岗位画像", "评估记录", "规则实验室"] as const).map((view) => (
             <button
               key={view}
               className={activeView === view ? "active" : ""}
@@ -296,13 +286,105 @@ export default function Home() {
             </div>
             <div className="evaluation-grid">
               <div><span>测试判断</span><strong>20</strong><small>两类岗位</small></div>
-              <div><span>结构校验</span><strong>20/20</strong><small>示例目标</small></div>
-              <div><span>已定义错误类型</span><strong>12</strong><small>E01—E12</small></div>
-              <div><span>敏感属性参与</span><strong>0</strong><small>设计约束</small></div>
+              <div><span>状态一致</span><strong>{evaluationSummary.correct_cases}/{evaluationSummary.total_cases}</strong><small>当前人工构造集</small></div>
+              <div><span>单条耗时</span><strong>{evaluationSummary.average_ms_per_case} ms</strong><small>本地规则基线</small></div>
+              <div><span>模型成本</span><strong>0 元</strong><small>未调用大模型</small></div>
             </div>
             <div className="notice">
-              <strong>当前原型尚未接入真实大模型。</strong>
-              <p>下一阶段将实现规则基线，再配置模型接口，对比证据正确率、无依据判断率、耗时与成本。</p>
+              <strong>规则基线已运行，但不能把当前结果解释为真实业务准确率。</strong>
+              <p>20 条用例与规则在同一开发周期内设计，存在过拟合风险。下一轮需要盲测样本、第二标注者和大模型对照实验。</p>
+            </div>
+          </section>
+        )}
+
+        {activeView === "规则实验室" && (
+          <section className="panel lab-view">
+            <div className="panel-header">
+              <div>
+                <h2>规则匹配实验室</h2>
+                <p>输入脱敏测试文本，浏览器本地计算；内容不会上传或保存。</p>
+              </div>
+              <span className="version-badge">Rule baseline v0.1</span>
+            </div>
+            <div className="lab-grid">
+              <div className="lab-input">
+                <label>
+                  岗位 JD
+                  <textarea
+                    value={labJd}
+                    onChange={(event) => setLabJd(event.target.value)}
+                    rows={6}
+                    placeholder="请粘贴岗位描述"
+                  />
+                </label>
+                <label>
+                  脱敏简历文本
+                  <textarea
+                    value={labResume}
+                    onChange={(event) => setLabResume(event.target.value)}
+                    rows={9}
+                    placeholder="请粘贴脱敏后的测试简历文本"
+                  />
+                </label>
+                <button className="primary-button analyze-button" onClick={runRuleAnalysis}>
+                  运行规则分析
+                </button>
+                <p className="lab-hint">请勿输入真实候选人的姓名、电话、邮箱或其他未授权信息。</p>
+                {!!labRequirements.length && (
+                  <div className="parsed-requirements">
+                    <strong>已识别 {labRequirements.length} 项要求</strong>
+                    {labRequirements.map((item) => (
+                      <span key={item.text}>{item.text} · {item.weight}%</span>
+                    ))}
+                  </div>
+                )}
+                {labWarnings.map((warning) => (
+                  <p className="lab-warning" key={warning}>{warning}</p>
+                ))}
+              </div>
+
+              <div className="lab-output">
+                {!labResult ? (
+                  <div className="empty-result">
+                    <strong>等待分析</strong>
+                    <p>运行后将输出匹配分、逐项证据、风险和面试核验问题。</p>
+                  </div>
+                ) : (
+                  <>
+                    <div className="lab-score">
+                      <div>
+                        <span>规则匹配分</span>
+                        <strong>{labResult.score}</strong>
+                      </div>
+                      <div>
+                        <span>系统建议</span>
+                        <b>{labResult.status}</b>
+                      </div>
+                      <div>
+                        <span>主要风险</span>
+                        <b>{labResult.risk}</b>
+                      </div>
+                    </div>
+                    <div className="lab-matches">
+                      {labResult.matches.map((item) => {
+                        const state = STATUS_LABELS[item.status] as string;
+                        return (
+                          <article key={item.requirementId}>
+                            <header>
+                              <b>{item.requirement}</b>
+                              <span className={statusClass[state]}>{state}</span>
+                            </header>
+                            <p><strong>证据：</strong>{item.evidence}</p>
+                            <p><strong>理由：</strong>{item.reason}</p>
+                            <p><strong>核验：</strong>{item.question}</p>
+                            <small>规则置信度 {Math.round(item.confidence * 100)}%</small>
+                          </article>
+                        );
+                      })}
+                    </div>
+                  </>
+                )}
+              </div>
             </div>
           </section>
         )}

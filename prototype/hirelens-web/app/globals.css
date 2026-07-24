@@ -158,6 +158,7 @@ summary small { margin-top: 4px; color: var(--muted); font-size: 9px; }
 .state.partial { background: #fff1dd; color: var(--amber); }
 .state.missing { background: #f0f2f5; color: #667085; }
 .state.verify { background: #fce8e6; color: var(--red); }
+.state.conflict { background: #7f1d1d; color: white; }
 .evidence-body { padding: 0 0 15px; }
 .evidence-quote, .reason-row, .question-box { padding: 10px 11px; border-radius: 8px; margin-bottom: 8px; }
 .evidence-quote { background: #f2f7fb; border-left: 3px solid #7aa8c7; }
@@ -189,6 +190,39 @@ summary small { margin-top: 4px; color: var(--muted); font-size: 9px; }
 .notice strong { font-size: 11px; }
 .notice p { margin: 5px 0 0; color: #4d6178; font-size: 10px; line-height: 1.5; }
 
+.lab-view { margin-top: 15px; padding-bottom: 18px; }
+.lab-grid { display: grid; grid-template-columns: minmax(300px, .85fr) minmax(420px, 1.4fr); gap: 18px; padding: 18px; }
+.lab-input { padding: 16px; background: #f7f9fb; border: 1px solid #e4eaf0; border-radius: 10px; }
+.lab-input label { display: block; margin-bottom: 13px; color: #526071; font-size: 10px; font-weight: 700; }
+.lab-input textarea {
+  width: 100%; margin-top: 7px; padding: 11px; resize: vertical; border: 1px solid #ccd6e1;
+  border-radius: 8px; background: white; color: var(--ink); font: inherit; font-size: 11px; line-height: 1.6;
+}
+.lab-input textarea[readonly] { background: #eef2f6; color: #536273; }
+.analyze-button { width: 100%; justify-content: center; padding-block: 10px; }
+.lab-hint { margin: 9px 0 0; color: #8b5b1b; font-size: 9px; line-height: 1.5; }
+.parsed-requirements { display: grid; gap: 5px; margin-top: 12px; padding: 10px; background: white; border: 1px solid #dfe6ed; border-radius: 8px; }
+.parsed-requirements strong { margin-bottom: 2px; font-size: 10px; }
+.parsed-requirements span { color: #526071; font-size: 9px; }
+.lab-warning { margin: 8px 0 0; padding: 8px; color: #8f3e32; background: #fff0ed; border-radius: 7px; font-size: 9px; line-height: 1.5; }
+.lab-output { min-height: 430px; }
+.empty-result { height: 100%; min-height: 300px; display: grid; place-content: center; text-align: center; border: 1px dashed #cbd5df; border-radius: 10px; color: var(--muted); }
+.empty-result strong { color: var(--ink); font-size: 14px; }
+.empty-result p { max-width: 280px; margin: 8px 0 0; font-size: 10px; }
+.lab-score { display: grid; grid-template-columns: .65fr 1fr 1.5fr; gap: 9px; margin-bottom: 12px; }
+.lab-score div { padding: 12px; background: #eef5ff; border-radius: 8px; }
+.lab-score span, .lab-score strong, .lab-score b { display: block; }
+.lab-score span { color: var(--muted); font-size: 8px; }
+.lab-score strong { margin-top: 5px; color: var(--blue); font-size: 24px; }
+.lab-score b { margin-top: 6px; font-size: 11px; }
+.lab-matches { display: grid; gap: 9px; }
+.lab-matches article { padding: 12px; border: 1px solid #e2e8ef; border-radius: 9px; }
+.lab-matches header { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 7px; }
+.lab-matches header b { font-size: 11px; }
+.lab-matches p { margin: 4px 0; color: #526071; font-size: 9px; line-height: 1.5; }
+.lab-matches p strong { color: var(--ink); }
+.lab-matches small { display: block; margin-top: 6px; color: var(--muted); font-size: 8px; }
+
 @media (max-width: 1050px) {
   .app-shell { grid-template-columns: 74px 1fr; }
   .sidebar { padding: 24px 10px; }
@@ -216,4 +250,5 @@ summary small { margin-top: 4px; color: var(--muted); font-size: 9px; }
   .candidate-table { overflow-x: auto; }
   .table-head, .candidate-row { min-width: 540px; }
   .evaluation-grid { grid-template-columns: repeat(2, 1fr); }
+  .lab-grid { grid-template-columns: 1fr; }
 }
