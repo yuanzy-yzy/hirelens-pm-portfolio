@@ -1,0 +1,98 @@
+{"kind":"deck","id":"pr/lugsxz","name":"Deck"}
+{"kind":"layout","layoutId":"f310c55b-9240-418f-a070-7e5263912795","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"303fff9a-d26f-410a-9a88-4f641460f181","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/h51yl1","slide":1,"title":"HIRELENS AI","textShapes":7}
+{"kind":"textbox","id":"sh/grm9ona9","slide":1,"text":"HIRELENS AI","textPreview":"HIRELENS AI","textChars":11,"textLines":1,"bbox":[84,84,700,34]}
+{"kind":"textbox","id":"sh/f6tsfi9o","slide":1,"text":"技术人才招聘助手","textPreview":"技术人才招聘助手","textChars":8,"textLines":1,"bbox":[84,150,820,86]}
+{"kind":"textbox","id":"sh/u5krmds3","slide":1,"text":"用可解释的方式，帮助 HR 初筛技术岗位简历","textPreview":"用可解释的方式，帮助 HR 初筛技术岗位简历","textChars":22,"textLines":1,"bbox":[88,260,850,42]}
+{"kind":"textbox","id":"sh/t4bqdsry","slide":1,"text":"个人 AI 产品经理项目  ·  可运行 Web Demo  ·  规则基线版本","textPreview":"个人 AI 产品经理项目  ·  可运行 Web Demo  ·  规则基线版本","textChars":40,"textLines":1,"bbox":[88,620,900,26]}
+{"kind":"shape","id":"sh/s329knad","slide":1,"bbox":[910,170,250,250]}
+{"kind":"textbox","id":"sh/72t8bi9s","slide":1,"text":"JD","textPreview":"JD","textChars":2,"textLines":1,"bbox":[950,220,150,44]}
+{"kind":"textbox","id":"sh/61krids7","slide":1,"text":"×","textPreview":"×","textChars":1,"textLines":1,"bbox":[950,276,150,44]}
+{"kind":"textbox","id":"sh/50bq98rm","slide":1,"text":"简历","textPreview":"简历","textChars":2,"textLines":1,"bbox":[950,332,150,44]}
+{"kind":"notes","id":"nt/h51yl1","slide":1,"text":""}
+{"kind":"slide","id":"sl/ovtlnq","slide":2,"title":"HIRELENS AI  ·  个人产品经理作品集","textShapes":8}
+{"kind":"textbox","id":"sh/y98vqxs3","slide":2,"text":"HIRELENS AI  ·  个人产品经理作品集","textPreview":"HIRELENS AI  ·  个人产品经理作品集","textChars":25,"textLines":1,"bbox":[72,38,720,24]}
+{"kind":"textbox","id":"sh/5cju1cbu","slide":2,"text":"技术岗位初筛，难点不是“有没有关键词”","textPreview":"技术岗位初筛，难点不是“有没有关键词”","textChars":19,"textLines":1,"bbox":[72,82,1050,58]}
+{"kind":"textbox","id":"sh/kbads7a9","slide":2,"text":"02 / 07","textPreview":"02 / 07","textChars":7,"textLines":1,"bbox":[1110,42,95,24]}
+{"kind":"shape","id":"sh/b6hcv2tc","slide":2,"bbox":[72,154,1136,5]}
+{"kind":"textbox","id":"sh/a58v2xs7","slide":2,"text":"招聘人员需要在有限时间内回答三个问题：","textPreview":"招聘人员需要在有限时间内回答三个问题：","textChars":19,"textLines":1,"bbox":[72,195,800,32]}
+{"kind":"textbox","id":"sh/x8zuxcbi","slide":2,"text":"这个人是否满足岗位核心要求？","textPreview":"这个人是否满足岗位核心要求？","textChars":14,"textLines":1,"bbox":[110,268,780,42]}
+{"kind":"textbox","id":"sh/w7qd47ax","slide":2,"text":"证据在哪里？哪些信息还需要核验？","textPreview":"证据在哪里？哪些信息还需要核验？","textChars":16,"textLines":1,"bbox":[110,352,820,42]}
+{"kind":"textbox","id":"sh/f2lc7mtw","slide":2,"text":"HireLens 的定位：在 HR 初筛和业务面试之间，提供可追溯的辅助判断。","textPreview":"HireLens 的定位：在 HR 初筛和业务面试之间，提供可追溯的辅助判断。","textChars":39,"textLines":1,"bbox":[72,525,1040,56]}
+{"kind":"textbox","id":"sh/u1cvyhsb","slide":2,"text":"使用场景：AI、具身智能、嵌入式等技术团队的简历初筛","textPreview":"使用场景：AI、具身智能、嵌入式等技术团队的简历初筛","textChars":26,"textLines":1,"bbox":[72,620,900,24]}
+{"kind":"notes","id":"nt/ovtlnq","slide":2,"text":""}
+{"kind":"slide","id":"sl/3hd5zh","slide":3,"title":"HIRELENS AI  ·  个人产品经理作品集","textShapes":19}
+{"kind":"textbox","id":"sh/o7alcfm9","slide":3,"text":"HIRELENS AI  ·  个人产品经理作品集","textPreview":"HIRELENS AI  ·  个人产品经理作品集","textChars":25,"textLines":1,"bbox":[72,38,720,24]}
+{"kind":"textbox","id":"sh/361kjulo","slide":3,"text":"产品把一次初筛拆成四个可解释步骤","textPreview":"产品把一次初筛拆成四个可解释步骤","textChars":16,"textLines":1,"bbox":[72,82,1050,58]}
+{"kind":"textbox","id":"sh/25s3ap43","slide":3,"text":"03 / 07","textPreview":"03 / 07","textChars":7,"textLines":1,"bbox":[1110,42,95,24]}
+{"kind":"shape","id":"sh/1kz2hk3y","slide":3,"bbox":[72,154,1136,5]}
+{"kind":"shape","id":"sh/gjq18fmd","slide":3,"bbox":[72,248,240,210]}
+{"kind":"textbox","id":"sh/fihkfals","slide":3,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[92,274,70,32]}
+{"kind":"textbox","id":"sh/eh8j6547","slide":3,"text":"输入岗位 JD","textPreview":"输入岗位 JD","textChars":7,"textLines":1,"bbox":[92,326,200,34]}
+{"kind":"textbox","id":"sh/tgz2d03m","slide":3,"text":"识别岗位类型与能力要求","textPreview":"识别岗位类型与能力要求","textChars":11,"textLines":1,"bbox":[92,382,195,52]}
+{"kind":"textbox","id":"sh/sfq14vm1","slide":3,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[322,330,30,40]}
+{"kind":"shape","id":"sh/ax436tsr","slide":3,"bbox":[358,248,240,210]}
+{"kind":"textbox","id":"sh/vyd4fytc","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[378,274,70,32]}
+{"kind":"textbox","id":"sh/wzml83ax","slide":3,"text":"输入脱敏简历","textPreview":"输入脱敏简历","textChars":6,"textLines":1,"bbox":[378,326,200,34]}
+{"kind":"textbox","id":"sh/xkvmh8bi","slide":3,"text":"读取候选人项目、技能与经历","textPreview":"读取候选人项目、技能与经历","textChars":13,"textLines":1,"bbox":[378,382,195,52]}
+{"kind":"textbox","id":"sh/mtk32tsv","slide":3,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[608,330,30,40]}
+{"kind":"shape","id":"sh/nud4byt0","slide":3,"bbox":[644,248,240,210]}
+{"kind":"textbox","id":"sh/8vml4jal","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[664,274,70,32]}
+{"kind":"textbox","id":"sh/9wvmdob6","slide":3,"text":"逐项匹配","textPreview":"逐项匹配","textChars":4,"textLines":1,"bbox":[664,326,200,34]}
+{"kind":"textbox","id":"sh/ypk3y9sj","slide":3,"text":"提取原文证据并标记缺口","textPreview":"提取原文证据并标记缺口","textChars":11,"textLines":1,"bbox":[664,382,195,52]}
+{"kind":"textbox","id":"sh/zqt47et4","slide":3,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[894,330,30,40]}
+{"kind":"shape","id":"sh/3a90za9w","slide":3,"bbox":[930,248,240,210]}
+{"kind":"textbox","id":"sh/29gj658b","slide":3,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[950,274,70,32]}
+{"kind":"textbox","id":"sh/pwri1kr2","slide":3,"text":"辅助决策","textPreview":"辅助决策","textChars":4,"textLines":1,"bbox":[950,326,200,34]}
+{"kind":"textbox","id":"sh/ovi18fqh","slide":3,"text":"输出分数、风险和面试追问","textPreview":"输出分数、风险和面试追问","textChars":12,"textLines":1,"bbox":[950,382,195,52]}
+{"kind":"textbox","id":"sh/by9k3u9s","slide":3,"text":"核心原则：展示“为什么这样判断”，而不是只给一个黑盒分数。","textPreview":"核心原则：展示“为什么这样判断”，而不是只给一个黑盒分数。","textChars":29,"textLines":1,"bbox":[72,560,1080,36]}
+{"kind":"notes","id":"nt/3hd5zh","slide":3,"text":""}
+{"kind":"slide","id":"sl/6rx3u0","slide":4,"title":"HIRELENS AI  ·  个人产品经理作品集","textShapes":6}
+{"kind":"textbox","id":"sh/i90bq9wj","slide":4,"text":"HIRELENS AI  ·  个人产品经理作品集","textPreview":"HIRELENS AI  ·  个人产品经理作品集","textChars":25,"textLines":1,"bbox":[72,38,720,24]}
+{"kind":"textbox","id":"sh/5cralova","slide":4,"text":"输入 JD 与简历后，系统先形成岗位画像","textPreview":"输入 JD 与简历后，系统先形成岗位画像","textChars":20,"textLines":1,"bbox":[72,82,1050,58]}
+{"kind":"textbox","id":"sh/4bitsjep","slide":4,"text":"04 / 07","textPreview":"04 / 07","textChars":7,"textLines":1,"bbox":[1110,42,95,24]}
+{"kind":"shape","id":"sh/v6psved8","slide":4,"bbox":[72,154,1136,5]}
+{"kind":"textbox","id":"sh/h87ahove","slide":4,"text":"岗位画像包含：","textPreview":"岗位画像包含：","textChars":7,"textLines":1,"bbox":[850,215,300,30]}
+{"kind":"textbox","id":"sh/g7y9ojet","slide":4,"text":"• 能力项\n• 权重\n• 证据要求\n• 风险提示\n• 待核验信息","textPreview":"• 能力项 | • 权重 | • 证据要求 | • 风险提示 | • 待核验信息","textChars":32,"textLines":5,"bbox":[850,274,310,220]}
+{"kind":"textbox","id":"sh/f2tsrydc","slide":4,"text":"示例岗位：嵌入式/技术研发岗位","textPreview":"示例岗位：嵌入式/技术研发岗位","textChars":15,"textLines":1,"bbox":[850,550,320,40]}
+{"kind":"image","id":"im/jqt8fi98","slide":4,"name":"","alt":"02_岗位画像.png","bbox":[72,188,710,460]}
+{"kind":"notes","id":"nt/6rx3u0","slide":4,"text":""}
+{"kind":"slide","id":"sl/oenpe1","slide":5,"title":"HIRELENS AI  ·  个人产品经理作品集","textShapes":4}
+{"kind":"textbox","id":"sh/atozuh43","slide":5,"text":"HIRELENS AI  ·  个人产品经理作品集","textPreview":"HIRELENS AI  ·  个人产品经理作品集","textChars":25,"textLines":1,"bbox":[72,38,720,24]}
+{"kind":"textbox","id":"sh/xwzi5wne","slide":5,"text":"结果不仅是分数，还会给出证据、风险和追问","textPreview":"结果不仅是分数，还会给出证据、风险和追问","textChars":20,"textLines":1,"bbox":[72,82,1050,58]}
+{"kind":"textbox","id":"sh/wvq1wrmt","slide":5,"text":"05 / 07","textPreview":"05 / 07","textChars":7,"textLines":1,"bbox":[1110,42,95,24]}
+{"kind":"shape","id":"sh/jih0765k","slide":5,"bbox":[72,154,1136,5]}
+{"kind":"textbox","id":"sh/kjq10rm5","slide":5,"text":"左：候选人排序与匹配状态    右：逐项评估记录","textPreview":"左：候选人排序与匹配状态    右：逐项评估记录","textChars":24,"textLines":1,"bbox":[230,660,800,24]}
+{"kind":"image","id":"im/3up43up8","slide":5,"name":"","alt":"01_候选人排序.png","bbox":[72,190,500,455]}
+{"kind":"image","id":"im/ovylwf6d","slide":5,"name":"","alt":"03_评估记录.png","bbox":[600,190,580,455]}
+{"kind":"notes","id":"nt/oenpe1","slide":5,"text":""}
+{"kind":"slide","id":"sl/rgyh5s","slide":6,"title":"HIRELENS AI  ·  个人产品经理作品集","textShapes":15}
+{"kind":"textbox","id":"sh/wfixsva5","slide":6,"text":"HIRELENS AI  ·  个人产品经理作品集","textPreview":"HIRELENS AI  ·  个人产品经理作品集","textChars":25,"textLines":1,"bbox":[72,38,720,24]}
+{"kind":"textbox","id":"sh/vupgjatk","slide":6,"text":"当前版本用配置化规则实现可复现的判断","textPreview":"当前版本用配置化规则实现可复现的判断","textChars":18,"textLines":1,"bbox":[72,82,1050,58]}
+{"kind":"textbox","id":"sh/utgfq5sz","slide":6,"text":"06 / 07","textPreview":"06 / 07","textChars":7,"textLines":1,"bbox":[1110,42,95,24]}
+{"kind":"shape","id":"sh/9s7yh0be","slide":6,"bbox":[72,154,1136,5]}
+{"kind":"textbox","id":"sh/8ryxova9","slide":6,"text":"岗位要求","textPreview":"岗位要求","textChars":4,"textLines":1,"bbox":[90,220,220,34]}
+{"kind":"textbox","id":"sh/7qpgfqto","slide":6,"text":"能力规则表","textPreview":"能力规则表","textChars":5,"textLines":1,"bbox":[380,220,220,34]}
+{"kind":"textbox","id":"sh/mpgfmls3","slide":6,"text":"简历证据","textPreview":"简历证据","textChars":4,"textLines":1,"bbox":[670,220,220,34]}
+{"kind":"textbox","id":"sh/lo7edgbi","slide":6,"text":"匹配结果","textPreview":"匹配结果","textChars":4,"textLines":1,"bbox":[960,220,220,34]}
+{"kind":"textbox","id":"sh/knyxkbax","slide":6,"text":"“熟悉 Linux、具备 C/C++ 嵌入式项目经验”","textPreview":"“熟悉 Linux、具备 C/C++ 嵌入式项目经验”","textChars":27,"textLines":1,"bbox":[90,300,220,120]}
+{"kind":"textbox","id":"sh/u9sz2xk7","slide":6,"text":"同义词\n强证据/弱证据\n能力权重/阈值","textPreview":"同义词 | 强证据/弱证据 | 能力权重/阈值","textChars":19,"textLines":3,"bbox":[380,300,220,120]}
+{"kind":"textbox","id":"sh/va1gv2ls","slide":6,"text":"“Linux 驱动开发”\n“C++ 项目”","textPreview":"“Linux 驱动开发” | “C++ 项目”","textChars":21,"textLines":2,"bbox":[670,300,220,120]}
+{"kind":"textbox","id":"sh/gbah472d","slide":6,"text":"满足 / 部分满足\n证据 / 风险 / 追问","textPreview":"满足 / 部分满足 | 证据 / 风险 / 追问","textChars":22,"textLines":2,"bbox":[960,300,220,120]}
+{"kind":"textbox","id":"sh/hcjyxc3y","slide":6,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[310,330,40,40]}
+{"kind":"textbox","id":"sh/658zyxkb","slide":6,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[600,330,40,40]}
+{"kind":"textbox","id":"sh/76hgr2lw","slide":6,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[890,330,40,40]}
+{"kind":"textbox","id":"sh/87qh0721","slide":6,"text":"这不是“模型已经理解了简历”，而是先用透明规则验证产品流程；后续可接入大模型增强语义匹配。","textPreview":"这不是“模型已经理解了简历”，而是先用透明规则验证产品流程；后续可接入大模型增强语义匹配。","textChars":45,"textLines":1,"bbox":[72,535,1110,64]}
+{"kind":"notes","id":"nt/rgyh5s","slide":6,"text":""}
+{"kind":"slide","id":"sl/uw7brq","slide":7,"title":"HIRELENS AI  ·  个人产品经理作品集","textShapes":8}
+{"kind":"textbox","id":"sh/2tcfedgn","slide":7,"text":"HIRELENS AI  ·  个人产品经理作品集","textPreview":"HIRELENS AI  ·  个人产品经理作品集","textChars":25,"textLines":1,"bbox":[72,38,720,24]}
+{"kind":"textbox","id":"sh/pg3y9sfy","slide":7,"text":"当前成果与下一步","textPreview":"当前成果与下一步","textChars":8,"textLines":1,"bbox":[72,82,1050,58]}
+{"kind":"textbox","id":"sh/ofuxgnyd","slide":7,"text":"07 / 07","textPreview":"07 / 07","textChars":7,"textLines":1,"bbox":[1110,42,95,24]}
+{"kind":"shape","id":"sh/fqlg3ixw","slide":7,"bbox":[72,154,1136,5]}
+{"kind":"textbox","id":"sh/epcfadgb","slide":7,"text":"现在已经完成","textPreview":"现在已经完成","textChars":6,"textLines":1,"bbox":[92,210,310,34]}
+{"kind":"textbox","id":"sh/1s3y58f2","slide":7,"text":"可运行 Web Demo\nJD-简历匹配流程\n20 条规则基线测试\nPRD、指标、合规和竞品分析","textPreview":"可运行 Web Demo | JD-简历匹配流程 | 20 条规则基线测试 | PRD、指标、合规和竞品分析","textChars":48,"textLines":4,"bbox":[92,270,430,190]}
+{"kind":"textbox","id":"sh/gruxcnyh","slide":7,"text":"下一步迭代","textPreview":"下一步迭代","textChars":5,"textLines":1,"bbox":[700,210,310,34]}
+{"kind":"textbox","id":"sh/rm1gzyx0","slide":7,"text":"接入大模型做语义匹配\n支持 PDF/Word 简历解析\n批量筛选与结果导出\n用真实授权样本做盲测","textPreview":"接入大模型做语义匹配 | 支持 PDF/Word 简历解析 | 批量筛选与结果导出 | 用真实授权样本做盲测","textChars":48,"textLines":4,"bbox":[700,270,430,190]}
+{"kind":"textbox","id":"sh/6lsf6tgf","slide":7,"text":"个人作品集 Demo，不用于真实招聘决策；最终判断仍由 HR 与业务面试官完成。","textPreview":"个人作品集 Demo，不用于真实招聘决策；最终判断仍由 HR 与业务面试官完成。","textChars":40,"textLines":1,"bbox":[92,600,1060,32]}
+{"kind":"notes","id":"nt/uw7brq","slide":7,"text":""}
