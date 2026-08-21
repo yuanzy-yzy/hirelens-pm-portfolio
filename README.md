@@ -21,7 +21,6 @@ evaluation/    测试集设计及人工标注用例
 outputs/       岗位市场分析工作簿与可视化预览
 prototype/     产品原型说明和 HireLens Web 可运行代码
 scripts/       数据处理与分析工作簿生成脚本
-portfolio/     产品案例说明、演示脚本和面试追问答案
 ```
 
 ## 数据与合规边界
