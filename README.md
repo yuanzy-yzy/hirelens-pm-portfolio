@@ -10,7 +10,6 @@ HireLens AI 是一个面向 AI、具身智能及其他技术团队招聘场景�
 
 在线 Demo 不需要安装环境，打开后可以使用示例岗位和脱敏简历体验完整流程：输入 JD 与简历 → 生成岗位画像 → 逐项匹配 → 查看证据、风险与面试问题。
 
-如果你是面试官，建议先体验在线 Demo，再查看下面的产品文档、规则引擎和评测材料。
 
 详细说明： [Demo 使用说明](portfolio/00_在线Demo使用说明.md) · [产品案例说明](portfolio/01_HireLens_AI产品案例说明.md) · [演示视频与源文件](outputs/hirelens-demo-video/README.md)
 
